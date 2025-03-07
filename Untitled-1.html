@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fariza naufal</title>
+    <link
+      href=uwok.css
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="kucinglogo.jpg" alt="Profile" class="profile-pic" />
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#list-harga">list harga</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="about-me">
+        <div class="about-me">
+      <img
+    src="kucing.jpg" alt="Profile Picture" class="about-profile-pic" />
+      <h2>Welcome ichanet temes</h2>
+      <p>
+       Kami menyediakan komputer dengan spek di atas rata rata 
+      </p>
+    </div>
+    </section>
+
+    <section class="list-harga" id="list-harga">
+      <h2>Cek harga</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Paket mini</h3>
+          <p>1 jam: 3000Rp
+          </p>
+          <a href="#">View Details</a>
+        </div>
+        <div class="project">
+          <h3>Paket regular</h3>
+          <p>3 jam: 8000Rp</p>
+          <a href="#">View Details</a>
+        </div>
+        <div class="project">
+          <h3>Paket malam</h3>
+          <p>22:00/09:00: 20000Rp</p>
+          <a href="#">View Details</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <div class="blog-post">
+        <h3>Fasilitas</h3>
+        <p><small>di posting 24 01 2025 by ichanet temes</small></p>
+        <p>
+          kursi,meja,kipas angin,cctv,parkiran geratis
+        </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blog-post">
+        <h3>Warnet</h3>
+        <p><small>di posting 24 01 2025 by ichanet temes</small></p>
+        <p>
+          <img src="warnetamin.jpg" alt=""blog>
+        </p>
+        <a href="#"></a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        If you'd like to get in touch, feel free to reach out via the following
+        channels:
+      </p>
+      <ul>
+        <li>
+          <strong>Email:</strong>
+          <a href="naufalfariza01@gmail.com">naufalfariza01@gmail.com</a>
+        </li>
+        <li>
+          <strong>Phone:</strong>
+          <a href="tel:+62 857-6518-9943">+62 857-6518-9943</a>
+        </li>
+    </section>
+
+    <script>
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll(".navbar ul li a");
+      navLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPath) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<main>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 fariza naufal. All rights reserved.</p>
+      </footer>
